@@ -1,5 +1,4 @@
 {% set version = "0.1.7" %}
-  {% set version = "0.1.6" %}
 
 package:
   name: compass-interface-core
