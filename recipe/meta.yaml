@@ -15,15 +15,17 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
+    - requests
     - certifi
     - lxml
     - pandas
-    - python-dateutil
-    - requests
+    - pydantic
+    - email-validator
+    - phonenumbers
 
 test:
   imports:
