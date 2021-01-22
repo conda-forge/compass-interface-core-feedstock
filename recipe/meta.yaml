@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: compass-interface-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/the-scouts/compass-interface-core/releases/download/v{{ version }}/compass-interface-core-{{ version }}.tar.gz
-  sha256: 841273e73a84ea805c60eff56d96a1c9c2a01c206fb6f449d86050b39234b521
+  sha256: 837752158ab9616664ac154aadf325624a7802db48a7a6c933ec814b137070ee
 
 build:
   number: 0
@@ -15,15 +15,17 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
+    - requests
     - certifi
     - lxml
     - pandas
-    - python-dateutil
-    - requests
+    - pydantic
+    - email-validator
+    - phonenumbers
 
 test:
   imports:
