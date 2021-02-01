@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/compass-interfa
 
 Summary: The unofficial API to the TSA Compass membership database
 
+Development: https://github.com/the-scouts/compass-interface-core
+
 Current build status
 ====================
 
