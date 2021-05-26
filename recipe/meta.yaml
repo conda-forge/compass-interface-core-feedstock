@@ -1,4 +1,4 @@
-{% set version = "0.15.1" %}
+{% set version = "0.15.2" %}
 
 package:
   name: compass-interface-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/the-scouts/compass-interface-core/releases/download/v{{ version }}/compass-interface-core-{{ version }}.tar.gz
-  sha256: d0f509432ed33289225015ace8ba29faa73db0e681c01d2fbcb7e2fffc31b3ce
+  sha256: b2869648888bd85928ed69dd12f62bf997a349fcd4cc25ce96b5eff439b4d5ea
 
 build:
   number: 0
