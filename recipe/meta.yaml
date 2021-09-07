@@ -19,9 +19,9 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - requests
+    - httpx
     - lxml
-    - pydantic
+    - pydantic >=1.8.2
     - email-validator
     - phonenumbers
 
