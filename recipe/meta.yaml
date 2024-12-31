@@ -9,17 +9,17 @@ source:
   sha256: d4c92ef07927a980a57ae473d6eebde13fa10f0df8fcd691628c5a4381810102
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools-scm >6.2
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - httpx
     - lxml
     - pydantic >=1.8.2
@@ -27,6 +27,8 @@ requirements:
     - phonenumbers
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - compass
 
